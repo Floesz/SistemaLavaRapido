@@ -3,6 +3,7 @@ package model;
 import java.time.LocalDateTime;
 
 public class Agendamento {
+
     private int idAgendamento;
     private Cliente cliente;
     private TipoServico tipo;

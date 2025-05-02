@@ -1,7 +1,7 @@
 package model;
 
 public class Cliente {
-    private int idCliente;
+    private int id;
     private String nome;
     private String cpf;
     private String telefone;
@@ -13,7 +13,7 @@ public class Cliente {
 
     // Constructor com argumentos
     public Cliente(int idCliente, String nome, String cpf, String telefone, String email, String placaVeiculo) {
-        this.idCliente = idCliente;
+        this.id = idCliente;
         this.nome = nome;
         this.cpf = cpf;
         this.telefone = telefone;
@@ -24,11 +24,11 @@ public class Cliente {
     //Getters e Setters
 
     public int getId() {
-        return idCliente;
+        return id;
     }
 
-    public void setId(int id) {
-        this.idCliente = id;
+    public void setId(int idCliente) {
+        this.id = idCliente;
     }
 
     public String getNome() {

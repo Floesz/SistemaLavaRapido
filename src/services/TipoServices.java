@@ -8,7 +8,7 @@ import java.util.List;
 
 public class TipoServices {
 
-    private List<TipoServico> listaServicos = new ArrayList<>();
+    private static List<TipoServico> listaServicos = new ArrayList<>();
 
 
     // Cadastrar um novo Serviço
@@ -52,7 +52,8 @@ public class TipoServices {
     }
 
     // Listar todos os serviços disponíveis
-    public List<TipoServico> listarTodosOsServicos(){
+    public static List<TipoServico> listarTodosOsServicos(){
+        System.out.println("Lista de serviços: " + listaServicos);
         return new ArrayList<>(listaServicos);
     }
 

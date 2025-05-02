@@ -8,7 +8,7 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 
-public class ViewCliente extends JFrame {
+public class ViewCliente extends JPanel {
     private ClienteServices clienteService = new ClienteServices();
 
     private JTextField txtNome = new JTextField(15);

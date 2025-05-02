@@ -9,10 +9,10 @@ import java.util.List;
 
 public class AgendamentoServices {
 
-    private List<Agendamento> listaAgendamentos = new ArrayList<>();
+    private static List<Agendamento> listaAgendamentos = new ArrayList<>();
 
     // Cadastrar um agendamento
-    public void agendarLavagem(Agendamento a){
+    public static void agendarLavagem(Agendamento a){
 
         if(a.getCliente() == null){
             throw new AgendamentoException("Cliente é obrigatório!");
@@ -27,7 +27,7 @@ public class AgendamentoServices {
             throw new AgendamentoException("Já existe um agendamento marcado nesse horário!");
         }
 
-        listaAgendamentos.add(a);
+        listaAgendamentos.add(a); // Enivando o agendamento para a lista
         a.setStatus("Agendado");
     }
 
@@ -69,7 +69,7 @@ public class AgendamentoServices {
     }
 
     // Listar todos os Agendamentos disponíveis
-    public List<Agendamento> listarTodosOsAgendamentos(){
+    public static List<Agendamento> listarTodosOsAgendamentos(){
         return new ArrayList<>(listaAgendamentos);
     }
 
@@ -86,7 +86,7 @@ public class AgendamentoServices {
 
 
     // Verifica se já existe um agendamento na mesma data/hora
-    private boolean conflitoHorario(LocalDateTime dataHora) {
+    private static boolean conflitoHorario(LocalDateTime dataHora) {
         for (Agendamento a : listaAgendamentos) {
             if (a.getDataHora().equals(dataHora) && a.getStatus().equals("Agendado")) {
                 return true;
@@ -94,4 +94,5 @@ public class AgendamentoServices {
         }
         return false;
     }
+
 }

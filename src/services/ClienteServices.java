@@ -7,7 +7,7 @@ import java.util.List;
 
 public class ClienteServices {
 
-    private List<Cliente> listaClientes = new ArrayList<>();
+    private static List<Cliente> listaClientes = new ArrayList<>();
 
 
     // Cadastro do cliente
@@ -50,7 +50,7 @@ public class ClienteServices {
     }
 
     // Listar todos os clientes
-    public List<Cliente> listarTodosOsClientes(){
+    public static List<Cliente> listarTodosOsClientes(){
         return new ArrayList<>(listaClientes);
     }
 
