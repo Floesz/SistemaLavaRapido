@@ -26,6 +26,7 @@ public class ViewTipoServico extends JPanel {
     public ViewTipoServico() {
         setLayout(new BorderLayout());
 
+
         // Painel de botões (esquerda)
         JPanel painelBotoes = new JPanel();
         painelBotoes.setLayout(new BoxLayout(painelBotoes, BoxLayout.Y_AXIS));

@@ -3,7 +3,6 @@ package view;
 import controller.AgendamentoController;
 import controller.ClienteController;
 import controller.TipoServicoController;
-import exceptions.AgendamentoException;
 import exceptions.ClienteException;
 import model.Agendamento;
 import model.Cliente;
@@ -36,6 +35,9 @@ public class ViewAgendamento extends JPanel {
 
     public ViewAgendamento() {
         setLayout(new BorderLayout());
+
+
+
 
         // Painel de botões
         JPanel painelBotoes = new JPanel();

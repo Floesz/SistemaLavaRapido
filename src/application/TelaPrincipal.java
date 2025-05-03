@@ -5,11 +5,13 @@ import view.ViewCliente;
 import view.ViewTipoServico;
 
 import javax.swing.*;
+import com.formdev.flatlaf.FlatDarkLaf;
 
 public class TelaPrincipal extends JFrame {
 
     public TelaPrincipal() {
         super("Sistema Lava Rápido");
+        
 
 
         JTabbedPane abas = new JTabbedPane();
@@ -39,6 +41,7 @@ public class TelaPrincipal extends JFrame {
     }
 
     public static void main(String[] args) {
+            FlatDarkLaf.install();
         SwingUtilities.invokeLater(TelaPrincipal::new);
     }
 

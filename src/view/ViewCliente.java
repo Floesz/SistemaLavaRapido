@@ -30,6 +30,7 @@ public class ViewCliente extends JPanel {
     public ViewCliente() {
         setLayout(new BorderLayout());
 
+
         // Painel principal para campos e botões lado a lado
         JPanel painelTopo = new JPanel(new BorderLayout());
 
