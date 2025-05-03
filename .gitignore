@@ -25,4 +25,4 @@ replay_pid*
 
 # .gitignore
 #Ignorar todos os arquivos config.properties
-src/config.properties
+config.properties
