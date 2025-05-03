@@ -27,7 +27,7 @@ public class TelaPrincipal extends JFrame {
             String tituloAba = abas.getTitleAt(selectedIndex);
 
             if (tituloAba.equals("Agendamentos")) {
-                viewAgendamento.carregarDados(); // Atualiza o ComboBox de serviços
+                viewAgendamento.carregarServicos(); // Atualiza o ComboBox de serviços
             }
         });
 

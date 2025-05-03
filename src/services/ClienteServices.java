@@ -74,6 +74,8 @@ public class ClienteServices {
         throw new ClienteException("Nenhum cliente encontrado com esse ID!");
     }
 
+
+
     // Verifica se o CPF já está cadastrado
     private boolean cpfJaCadastrado(String cpf) {
         return listaClientes.stream().anyMatch(c -> c.getCpf().equals(cpf));
