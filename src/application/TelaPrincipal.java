@@ -11,7 +11,7 @@ public class TelaPrincipal extends JFrame {
 
     public TelaPrincipal() {
         super("Sistema Lava Rápido");
-        
+
 
 
         JTabbedPane abas = new JTabbedPane();
